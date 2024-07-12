@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f8f9fa;
 }
 
 .container {
@@ -28,10 +29,6 @@ body {
 .section p {
     color: #666;
     line-height: 1.6;
-}
-
-.bg-gray {
-    background-color: #f8f9fa;
 }
 
 /* Header styles */
@@ -82,7 +79,7 @@ header {
     background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,24 +88,25 @@ header {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
-    max-width: 600px;
-    line-height: 1.6;
+    max-width: 800px;
+    line-height: 1.8;
 }
 
 .btn {
     display: inline-block;
     background-color: #ffc107;
     color: #333;
-    padding: 12px 30px;
+    padding: 15px 40px;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 1.2rem;
     transition: background-color 0.3s ease;
 }
 
@@ -119,28 +117,33 @@ header {
 /* Services section */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .service {
     background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
 }
 
 .service i {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #ffc107;
     margin-bottom: 20px;
 }
 
 .service h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 .service p {
@@ -153,20 +156,26 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .portfolio-item {
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .portfolio-item img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
 }
 
 .portfolio-item h3 {
@@ -188,7 +197,7 @@ form textarea,
 form button {
     display: block;
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     margin-bottom: 20px;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -209,7 +218,7 @@ form button:hover {
 
 /* Footer styles */
 footer {
-    background-color: #343a40;
+    background-color: #1e2328;
     color: #fff;
     padding: 40px 0;
     text-align: center;
@@ -237,7 +246,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #1e2328;
+    background-color: #12161a;
     padding: 10px 0;
 }
 
