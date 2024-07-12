@@ -1,117 +1,247 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HyperDimen | Redefining Virtual Reality</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="brand">
-                    <h1><a href="#">HyperDimen</a></h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="hero">
-            <div class="container">
-                <h1>Redefining Virtual Reality</h1>
-                <p>Experience the future of gaming and immersive technology with HyperDimen.</p>
-                <a href="#services" class="btn">Explore Services</a>
-            </div>
-        </div>
-    </header>
+/* styles.css */
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>HyperDimen is at the forefront of developing advanced virtual reality systems that bring unprecedented realism and immersion to gaming and interactive experiences.</p>
-        </div>
-    </section>
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-    <section id="services" class="section bg-gray">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service">
-                    <i class="fas fa-vr-cardboard"></i>
-                    <h3>VR Gaming</h3>
-                    <p>Explore immersive virtual worlds and games.</p>
-                </div>
-                <div class="service">
-                    <i class="fas fa-robot"></i>
-                    <h3>AI Integration</h3>
-                    <p>Integrate advanced AI technologies into virtual environments.</p>
-                </div>
-                <div class="service">
-                    <i class="fas fa-users"></i>
-                    <h3>Multiplayer Experiences</h3>
-                    <p>Engage with friends and players worldwide in virtual spaces.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="portfolio1.jpg" alt="Portfolio Item 1">
-                    <h3>Virtual Reality Adventure</h3>
-                </div>
-                <div class="portfolio-item">
-                    <img src="portfolio2.jpg" alt="Portfolio Item 2">
-                    <h3>AI-Enhanced Simulation</h3>
-                </div>
-                <div class="portfolio-item">
-                    <img src="portfolio3.jpg" alt="Portfolio Item 3">
-                    <h3>Multiplayer VR Game</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
 
-    <section id="contact" class="section bg-gray">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+.section h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #333;
+}
 
-    <footer>
-        <div class="container">
-            <div class="footer-info">
-                <h3>HyperDimen</h3>
-                <p>Redefining Virtual Reality</p>
-            </div>
-            <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 HyperDimen. All rights reserved.</p>
-        </div>
-    </footer>
+.section p {
+    color: #666;
+    line-height: 1.6;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.bg-gray {
+    background-color: #f8f9fa;
+}
+
+/* Header styles */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffc107;
+}
+
+.brand h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #333;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffca2c;
+}
+
+/* Services section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service i {
+    font-size: 3rem;
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Portfolio section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.portfolio-item h3 {
+    padding: 15px;
+    background-color: #343a40;
+    color: #fff;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Contact section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffca2c;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #ffc107;
+}
+
+.footer-bottom {
+    background-color: #1e2328;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
